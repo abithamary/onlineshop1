@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.Dao.CategoryDAO;
-import com.Dao.CartDAO;
+import com.Dao.My_CartDAO;
 import com.Dao.ProductDAO;
 import com.Dao.SupplierDAO;
 import com.Model.Category;
-import com.Model.Cart;
+import com.Model.My_Cart;
 import com.Model.Product;
 import com.Model.Supplier;
 
@@ -49,10 +49,10 @@ public class SpringSecurityController {
 	private Product product;
 
 	@Autowired
-	private CartDAO cartDAO;
+	private My_CartDAO cartDAO;
 
 	@Autowired
-	private Cart myCart;
+	private My_Cart myCart;
 
 	@RequestMapping(value = "/loginError", method = RequestMethod.GET)
 	public String loginError(Model model) {

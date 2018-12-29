@@ -17,7 +17,7 @@
 	<div class="navbar navbar-default navbar-custom navbar-fixed-bottom" style="height:15px;">
 		<div class="container-fluid">
 			<div class="navbar-text pull-left">
-				<p><marquee>&copy; Online Mobile Store <b><i>Ganesh</i></b> </marquee></p>
+				<p><marquee>&copy; Online Medical Store <b><i>Midas Touch</i></b> </marquee></p>
 			</div>
 			<div class="navbar-text noStyle pull-right">
 				<a href="https://www.facebook.com/isaac.devavaram" target="_blank">

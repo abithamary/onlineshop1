@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.Dao.CategoryDAO;
-import com.Dao.CartDAO;
+import com.Dao.My_CartDAO;
 import com.Dao.ProductDAO;
 import com.Dao.SupplierDAO;
 import com.Dao.UserDAO;
 import com.Model.Category;
-import com.Model.Cart;
+import com.Model.My_Cart;
 import com.Model.Product;
 import com.Model.Supplier;
 import com.Model.User;
@@ -57,10 +57,10 @@ public class HomeController {
 	UserDAO userDAO;
 
 	@Autowired
-	Cart myCart;
+	My_Cart myCart;
 
 	@Autowired
-	CartDAO myCartDAO;
+	My_CartDAO myCartDAO;
 
 	@RequestMapping("/")
 	public ModelAndView goToHome() {
@@ -155,4 +155,12 @@ public class HomeController {
 		model.addAttribute("isUserAtHomePage", "false");
 		return "Home";
 	}
+	
+	@RequestMapping("/payment")
+	public String paymenetPage(Model model) {
+		model.addAttribute("isUserClickedPayment", "true");
+		model.addAttribute("isUserAtHomePage", "false");
+		return "Home";
+	}
+
 }

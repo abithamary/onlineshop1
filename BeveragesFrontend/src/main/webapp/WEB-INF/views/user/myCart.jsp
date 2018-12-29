@@ -37,16 +37,10 @@
 						<td>${cart.product_name}</td>
 						<td><fmt:formatDate pattern="dd/MM/yyyy" value="${cart.date_added}" /></td>
 						<td>
-								<input type="number" id="quant" value="${cart.quantity}"/>						
-						<!-- <form class="form-horizontal" action="myCart-quant/${cart.id}" method="get">
-	 							<div class="form-group">
-							        <input type="number" id="quant" value="${cart.quantity}"/>
-							    </div>
-							    <div class="form-group">
-							        <button type="submit"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-    							</div>
-    						</form> -->
-    					</td>
+								${cart.quantity}						
+						 <form class="form-horizontal" action="myCart-quant/${cart.id}" method="get">
+	 						
+			</form>     					</td>
 						<td>${cart.price}</td>
 						<td><a href="myCart-delete/${cart.id}" class="btn btn-danger">Remove</a></td>
 					</tr>
@@ -57,6 +51,7 @@
 					<td></td>
 					<td>Total Rs. ${totalAmount}</td>
 					<td><a href="myCart-checkOut/${cart.user_id}" class="btn btn-success">Check Out</a></td>
+					<td><a href="payment/" class="btn btn-success">Payment</a></td>
 				</tr>
 
 			</table>

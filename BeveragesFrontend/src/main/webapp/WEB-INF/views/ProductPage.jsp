@@ -16,11 +16,11 @@
 					<img class="img-responsive center-block" src="<c:url value="/resources/img/${selectedProduct.id}.jpg" />" alt="${selectedProduct.name}" />
 				</div>
 				<div class="col-md-5 col-xs-7">
-				
-					<div class="h2">${selectedProduct.name}</div>
-					<div class="h3"><b>Product description:</b> ${selectedProduct.description}</div>
-					<div class="h4"><b>Product category:</b> ${selectedProduct.category_id}</div>
-					<div class="h4"><b>Product seller:</b> ${selectedProduct.supplier_id}</div>
+					<div class="h2"><h1>${selectedProduct.name} </h1></div></br>
+					<div class="h3"><b>Product description:</b> ${selectedProduct.description}</div></br>
+					<div class="h4"><b>Product category:</b> ${selectedProduct.category_id}</div></br>
+					<div class="h4"><b>Product seller:</b> ${selectedProduct.supplier_id}</div></br>
+					<div class="h4"><b>Quantity </b> <input type="number" name="qty" size=5></div></br>
 				</div>
 				<div class="col-md-3 col-xs-5">
 					

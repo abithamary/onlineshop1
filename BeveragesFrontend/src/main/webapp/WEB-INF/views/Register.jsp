@@ -32,13 +32,13 @@
       <div class="form-group">
       <label class="control-label col-sm-2" for="uCountry"><i class="fa fa-globe" aria-hidden="true"></i> Country:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="uCountry" placeholder="Enter Country Name" name="uCountry" required>
+        <input type="text" class="form-control" id="uCountry" placeholder="Enter Username" name="uCountry" required>
       </div>
       </div>
       <div class="form-group">
       <label class="control-label col-sm-2" for="uAddress"><i class="fa fa-location-arrow" aria-hidden="true"></i> Address:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="uAddress" placeholder="Enter Address" name="uAddress" required>
+        <input type="text" class="form-control" id="uAddress" placeholder="Enter Username" name="uAddress" required>
       </div>
       </div>
     <div class="form-group">

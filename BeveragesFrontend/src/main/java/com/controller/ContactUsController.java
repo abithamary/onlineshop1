@@ -34,7 +34,7 @@ public class ContactUsController {
 		ModelAndView mv = new ModelAndView("redirect:/Home");
 		String loggedInUserID = (String) session.getAttribute("loggedInUserID");
 		mv.addObject("Username", loggedInUserID);
-	
+		
 		contact.setName(name);
 		contact.setEmail(email);
 		contact.setContact(mobile);

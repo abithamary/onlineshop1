@@ -12,13 +12,6 @@
 		<h2>Login</h2>
 		<c:url var="action" value="/j_spring_security_check" />
 		<form name="loginForm" class="form-horizontal" action="${action}" method="post">
-			<div class="imgcontainer">
-    <img src="resources/images/avatar.png" alt="Avatar" class="centerImage">
-   <%--  <img src="<%=request.getContextPath()%>resources/images/user.png"> --%>
-  </div>
-			
-		<br>	
-			
 			<div class="form-group">
 				<label class="control-label col-sm-2" for="id"><i class="fa fa-user" aria-hidden="true"></i> Username:</label>
 				<div class="col-sm-10">
