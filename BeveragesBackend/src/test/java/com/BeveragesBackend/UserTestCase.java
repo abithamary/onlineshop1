@@ -3,6 +3,7 @@ package com.BeveragesBackend;
 import static org.junit.Assert.*;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -31,24 +32,24 @@ public class UserTestCase {
 
 		user = (User) context.getBean("user");
 
-	}
-	
-/*	@Test
+	}	
+	//@Ignore
+	@Test
 	public void createUserTestCase() {
-		user.setEmail("ganeshdhikonda@gmail.com");
-		user.setId("ganesh");
-		user.setName("ganesh dhikonda");
-		user.setPassword("ganesh@123");
+		user.setEmail("kavitha123@gmail.com.com");
+		user.setId("kavitha123");
+		user.setName("kavitha");
+		user.setPassword("kavitha12");
 		user.setCountry("India");
-		user.setAddress("Hyderabad");
+		user.setAddress("banglore");
 		user.setRole("ROLE_ADMIN");
-		user.setContact("9550945687");
+		user.setContact("9247660750");
 		boolean flag = userDAO.save(user);
 
 		assertEquals("createUserTestCase", true, flag);
 
 	}
-	
+	@Ignore
 	@Test
 	public void updateUserTestCase() {
 		user.setEmail("isaacdv84@gmail.com");
@@ -64,7 +65,7 @@ public class UserTestCase {
 		assertEquals("updateUserTestCase", true, flag);
 
 	}
-
+@Ignore
 	@Test
 	public void validateUserTestCase() {
 
@@ -72,11 +73,11 @@ public class UserTestCase {
 		assertEquals(true, flag);
 
 	}
-
+@Ignore
 	@Test
 	public void listAllUserTestCase() {
 		int actualSize = userDAO.list().size();
 		assertEquals(5, actualSize);
-	}*/
+	}
 
 }

@@ -41,10 +41,10 @@ public class ProductTestCase {
 		
 		product.setId("PROD1");
 		product.setCategory_id("CATG1");
-		product.setDescription("Diabetic Medicine");
-		product.setName("Glimmy1");
+		product.setDescription("Lydia Chair");
+		product.setName("Lydia");
 		product.setPrice(210);
-		product.setQuantity(1);
+		product.setQuantity(10);
 		product.setSupplier_id("SUPP1");
 		
 		boolean flag =  productDAO.saveOrUpdate(product);
@@ -52,7 +52,7 @@ public class ProductTestCase {
 		assertEquals("createProductTestCase",true,flag);
 		
 	}
-	@Test
+/*	@Test
 	public void updateProductTestCase()
 	{
 		product.setId("PROD1");

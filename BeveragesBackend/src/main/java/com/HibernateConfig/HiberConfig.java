@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.Model.Address;
 import com.Model.Category;
 import com.Model.Contact;
-import com.Model.Cart;
+import com.Model.My_Cart;
 import com.Model.Product;
 import com.Model.Supplier;
 import com.Model.User;
@@ -28,7 +28,8 @@ import com.Model.User;
 public class HiberConfig {
 
 	@Bean(name = "dataSource")
-	public DataSource getH2DataSource() {
+	public DataSource getH2DataSource()
+	{
 
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
@@ -55,13 +56,14 @@ public class HiberConfig {
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
+		
 		sessionBuilder.addProperties(getHibernateProperties());
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Category.class);
 		sessionBuilder.addAnnotatedClass(Supplier.class);
 		sessionBuilder.addAnnotatedClass(Address.class);
 		sessionBuilder.addAnnotatedClass(Product.class);
-		sessionBuilder.addAnnotatedClass(Cart.class);
+		sessionBuilder.addAnnotatedClass(My_Cart.class);
 		sessionBuilder.addAnnotatedClass(Contact.class);
 		sessionBuilder.scanPackages("com");
 

@@ -1,5 +1,6 @@
 package com.Model;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,21 +12,20 @@ import org.springframework.stereotype.Component;
 public class Contact {
 	@Id
 	@GeneratedValue
-	private String id;
-
+	private int id;
 	private String name;
 	private String contact;
-
-	public String getContact() {
-		return contact;
-	}
-
-	public void setContact(String contact) {
-		this.contact = contact;
-	}
-
 	private String email;
 	private String message;
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -35,12 +35,12 @@ public class Contact {
 		this.name = name;
 	}
 
-	public String getId() {
-		return id;
+	public String getContact() {
+		return contact;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setContact(String contact) {
+		this.contact = contact;
 	}
 
 	public String getEmail() {

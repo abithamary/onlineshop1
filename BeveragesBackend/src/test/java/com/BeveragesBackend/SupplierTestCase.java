@@ -32,11 +32,11 @@ public class SupplierTestCase {
 		supplier = (Supplier) context.getBean("supplier");
 
 	}
-
-	/*@Test
+/*
+	@Test
 	public void createSupplierTestCase() {
 		supplier.setId("SUPP1");
-		supplier.setName("Apollo");
+		supplier.setName("Sri Rupha Furniture & Furni");
 		supplier.setAddress("Lingampally");
 
 		boolean flag = supplierDAO.save(supplier);
@@ -44,7 +44,7 @@ public class SupplierTestCase {
 		assertEquals("createSupplierTestCase", true, flag);
 
 	}
-
+/*
 	@Test
 	public void updateSupplierTestCase() {
 		supplier.setId("SUPP1");

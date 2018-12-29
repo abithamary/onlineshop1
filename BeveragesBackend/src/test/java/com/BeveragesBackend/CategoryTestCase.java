@@ -3,6 +3,7 @@ package com.BeveragesBackend;
 import static org.junit.Assert.*;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -26,40 +27,35 @@ public class CategoryTestCase {
 		context = new AnnotationConfigApplicationContext();
 		context.scan("com");
 		context.refresh();
-
-		
-		categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
-
-		
-
-		category = (Category) context.getBean("category");
+	categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
+	category = (Category) context.getBean("category");
 
 	}
-
-	/*@Test
+/*@Ignore
+	@Test
 	public void createCategoryTestCase() {
-		category.setId("CATG1");
-		category.setName("Diabetic Medicine");
-		category.setDescription("Diabetic Medicine");
+		category.setId("CATG2");
+		category.setName("Mobile");
+		category.setDescription("touch screen mobiles");
 
 		boolean flag = categoryDAO.save(category);
 
 		assertEquals("createCategoryTestCase", true, flag);
 
 	}
-
+/*@Ignore
 	@Test
 	public void updateCategoryTestCase() {
 		category.setId("CATG1");
-		category.setName("Dental Medicine");
-		category.setDescription("for tooth pain");
+		category.setName("cell phone");
+		category.setDescription("touch screen mobiles");
 
 		boolean flag = categoryDAO.update(category);
 
 		assertEquals("updateCategoryTestCase", true, flag);
 
 	}
-
+@Ignore
 	@Test
 	public void deleteCategoryTestCase() {
 		category.setName("Dental Medicine");
@@ -68,7 +64,7 @@ public class CategoryTestCase {
 		assertEquals("deleteCategoryTestCase", true, flag);
 
 	}
-
+@Ignore
 	@Test
 	public void listAllCategoryTestCase() {
 		int actualSize = categoryDAO.list().size();
